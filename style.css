@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'OldLondon';
+    src: url('./Fonts/old_london/OldLondon.ttf') format('truetype');
+}
+
+:root {
+    --date-background: #f7f7f7;
+    --date-border: #e2e2e2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header h1 {
+    font-family: 'OldLondon', sans-serif;
+    font-size: 22px;
+}
+
+.date {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--date-background);
+    border-bottom: 1px solid var(--date-border);
+    border-top: 1px solid var(--date-border);
+}   
+
+.date .subscribe {
+    text-transform: uppercase;
+}
+
+section {
+    padding: 1rem;
+}
+
+section article {
+    position: relative;
+    margin-top: 20px;
+}
+
+section article:first-of-type {
+    margin-top: 0;
+}
+
+section article img {
+    width: 100%;
+}
+
+section article h1 {
+    font-size: 1.5rem;
+}
+
+section article p {
+    padding: 0.5rem 0;
+}
+
+section article span {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+section article img {
+    margin-top: 0.5rem;
+}
+
+section article .proprietary {
+    font-size: 12px;
+    text-transform: none;
+    text-align: right;
+}
+
+section article::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    border-bottom: 2px solid black;
+}
+
+section.games {
+    font-family: serif;
+}
+section.games span {
+    font-style: italic;
+    font-size: 14px;
+}
+
+section.games h2 {
+    margin-bottom: 1rem;
+}
+
+section.games .game div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.games .game img {
+    width: 30%;
+}
+
+footer {
+    padding: 1rem;
+}
+
+footer h1 {
+    font-family: 'OldLondon', sans-serif;
+}
+
+footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #666;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer li {
+    list-style: none;
+}
+
+.copyright {
+    text-align: center;
+}
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+
+
